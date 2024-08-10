@@ -26,7 +26,6 @@ const searchRestaurant = async (req: Request, res: Response) => {
     const sortOption = (req.query.sortOption as string) || "lastUpdated";
     const page = parseInt(req.query.page as string) || 1;
 
-    // YES I'M USING "ANY" in TYPE SCRIPT
     let query: any = {};
 
     query["city"] = new RegExp(city, "i");
