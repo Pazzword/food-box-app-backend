@@ -31,7 +31,7 @@ export const validateMyRestaurantRequest = [
   body("deliveryPrice")
     .isFloat({ min: 0 })
     .withMessage("Delivery price must be a positive number"),
-  body("estimatedDeliveryTime")
+  body("estimateDeliveryTime")
     .isInt({ min: 0 })
     .withMessage("Estimated delivery time must be a postivie integar"),
   body("cuisines")
